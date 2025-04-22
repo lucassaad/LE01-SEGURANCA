@@ -22,9 +22,6 @@ def encrypt_shift_cipher(plain_text: str, key: int) -> str:
 
     return ''.join(cipher_text) # junta todos os caracteres da lista em uma string e retorna
 
-print(encrypt_shift_cipher("Este e um exemplo", 3))
-
-
 # Essa é uma implementação simples de decriptografia de cifra de César por força bruta. Não lida com caracteres especiais.
 def decrypt_shift_cipher_Brute(cipher_text: str) -> None:
     for key in range(26):   # percorre todas as chaves de 0 a 25
@@ -117,15 +114,3 @@ def decrypt_transposition_cipher(cipher_text: str) -> None:
         key_len += 1
     return 
     
-
-
-
-# print(encrypt_transposition_cipher("Meu nome e Lucas SR", [3,1,2,4]))
-encrypt_transposition_cipher("Esse e um teste", [3,1,2,4])
-# encrypt_transposition_cipher("Este é um Teste", [3,1,2])
-
-# decrypt_transposition_cipher("témeeEe  ss uTt")
-
-
-
-
